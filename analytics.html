@@ -3,21 +3,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Finance Tracker</title>
+<title>Analytics</title>
 <link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+
 <div class="sidebar">
 <h2>Finance</h2>
 <a href="dashboard.html">Dashboard</a>
 <a href="transactions.html">Add Transaction</a>
 <a href="goals.html">Goals</a>
-<a href="analytics.html">Analytics</a>
 </div>
 
 <div class="content">
-<h1>Welcome</h1>
-<p>Use the sidebar to navigate your personal finance tracker.</p>
+<h1>Analytics</h1>
+<canvas id="categoryChart"></canvas>
 </div>
+
+<script src="js/storage.js"></script>
+<script src="js/charts.js"></script>
+
 </body>
 </html>

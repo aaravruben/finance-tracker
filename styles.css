@@ -1,34 +1,44 @@
-body {
-font-family: Arial;
-background: #f4f4f4;
-padding: 40px;
+
+body{
+font-family:Arial;
+margin:0;
+display:flex;
 }
 
-h1 {
-color: #333;
+.sidebar{
+width:200px;
+background:#1e293b;
+color:white;
+height:100vh;
+padding:20px;
 }
 
-.form input, .form select {
-padding: 8px;
-margin: 5px;
+.sidebar a{
+display:block;
+color:white;
+margin:10px 0;
+text-decoration:none;
 }
 
-button {
-padding: 8px 15px;
-background: green;
-color: white;
-border: none;
-cursor: pointer;
+.content{
+padding:30px;
+flex:1;
 }
 
-ul {
-list-style: none;
-padding: 0;
+.cards{
+display:flex;
+gap:20px;
 }
 
-li {
-background: white;
-margin: 5px 0;
-padding: 10px;
-border-radius: 5px;
+.card{
+background:#f1f5f9;
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+form input, form select, form button{
+display:block;
+margin:10px 0;
+padding:10px;
 }
